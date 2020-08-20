@@ -7,7 +7,7 @@ This package provides an eBay OAuth 2.0 support for the PHP League's [OAuth 2.0 
 To install, use composer:
 
 ```
-composer require nitromike/ebay-api-oauth2
+composer require nitromike502/ebay-api-oauth2
 ```
 
 ## Usage
