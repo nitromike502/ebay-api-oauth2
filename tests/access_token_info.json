@@ -3,7 +3,7 @@
     "individualAccount": {
         "email": "user@example.com",
         "firstName": "john",
-        "lastName": "doe",
+        "lastName": "doe"
     },
     "registrationMarketplaceId": "EBAY_US",
     "status": "CONFIRMED",

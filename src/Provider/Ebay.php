@@ -4,7 +4,7 @@ namespace Nitromike502\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Provider\AbstractProvider;
-use League\OAuth2\Client\Provider\Exception\EbayProviderException;
+use Nitromike502\OAuth2\Client\Provider\Exception\EbayProviderException;
 use Psr\Http\Message\ResponseInterface;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 

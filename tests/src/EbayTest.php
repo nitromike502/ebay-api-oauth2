@@ -66,15 +66,15 @@ class EbayTest extends TestCase
         $url = $this->provider->getAuthorizationUrl();
         $uri = parse_url($url);
 
-        $this->assertEquals('api.ebay.com', $uri['host']);
-        $this->assertEquals('/oauth2/authorize', $uri['path']);
+        $this->assertEquals('auth.ebay.com', $uri['host']);
+        $this->assertEquals('/oauth2/authorize/', $uri['path']);
         
         $this->provider->enableSandbox(true);
         $url = $this->provider->getAuthorizationUrl();
         $uri = parse_url($url);
 
-        $this->assertEquals('api.sandbox.ebay.com', $uri['host']);
-        $this->assertEquals('/oauth2/authorize', $uri['path']);
+        $this->assertEquals('auth.sandbox.ebay.com', $uri['host']);
+        $this->assertEquals('/oauth2/authorize/', $uri['path']);
     }
 
     public function testGetBaseAccessTokenUrl()
@@ -175,7 +175,7 @@ class EbayTest extends TestCase
     }
 
     /**
-     * @expectedException \League\OAuth2\Client\Provider\Exception\IdentityProviderException
+     * @expectedException \Nitromike502\OAuth2\Client\Provider\Exception\EbayProviderException
      */
     public function testExceptionThrownWhenErrorReceived()
     {

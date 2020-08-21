@@ -2,7 +2,8 @@
 
 namespace Ebay\OAuth2\Client\Provider\Exception;
 
+use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 
-class EbayProviderException extends \League\OAuth2\Client\Provider\Exception\Exception
+class EbayProviderException extends IdentityProviderException
 {
 }
